@@ -9,4 +9,5 @@ Implementation of the stochastic birth & death algorithm is given in the script 
 1) A pair of (lon,lat) coordinates defining the top-left and bottom-right corners of a rectangular map area of interest.
 2) A static image of large infrastructure occupying the area of interest.
 3) A *.csv* file containing details of pairwise intersections of camera-to-object rays. This file should have columns (in order) *d1,d2* (depth estimates), *lat,lon* (coordinates of intersection), *delta1, delta2* (camera-to-intersection distances), *CNN1, CNN2* (measures of confidence).
+
 The parameters of the model can be altered by editing lines 309 - 321 in the *simulation* function.
