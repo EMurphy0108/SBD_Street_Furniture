@@ -8,6 +8,6 @@ Implementation of the synthetic data generation is given in the script **synth_d
 Implementation of the stochastic birth & death algorithm is given in the script **sbd.py**, with main function *simulation()*. This function requires the following inputs to run:
 1) A pair of (lon,lat) coordinates defining the top-left and bottom-right corners of a rectangular map area of interest.
 2) A static image of large infrastructure occupying the area of interest.
-3) A *.csv* file containing details of pairwise intersections of camera-to-object rays. This file should have columns (in order) *d1,d2* (depth estimates), *lat,lon* (coordinates of intersection), *delta1, delta2* (camera-to-intersection distances), *CNN1, CNN2* (measures of confidence).
+3) A *.csv* file containing details of pairwise intersections of camera-to-object rays. This file should have columns (in order) *d1,d2* (depth estimates), *lat,lon* (coordinates of intersection), *delta1, delta2* (camera-to-intersection distances), *CNN1, CNN2* (measures of confidence). For details of how to extract pairwise camera-to-object ray intersections, readers are referred to [Krylov et. al. (2018)](https://www.mdpi.com/2072-4292/10/5/661).
 
-The parameters of the model can be altered by editing lines 309 - 321 in the *simulation* function.
+The parameters of the model can be altered by editing lines 347 - 357 of the script.
